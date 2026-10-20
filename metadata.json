@@ -1,0 +1,6 @@
+{
+  "name": "Yesmin AI",
+  "description": "Female AI companion and JARVIS-style assistant with real-time voice calling, Hindi/English conversations, phone automation, coding tools, and persistent memory.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
