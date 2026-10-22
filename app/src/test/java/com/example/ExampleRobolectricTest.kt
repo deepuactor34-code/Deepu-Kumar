@@ -18,4 +18,15 @@ class ExampleRobolectricTest {
     val appName = context.getString(R.string.app_name)
     assertEquals("Yesmin AI", appName)
   }
+
+  @Test
+  fun `verify bottomNavScreens are non-null and have valid routes`() {
+    val screens = com.example.ui.navigation.YesminScreen.bottomNavScreens
+    assertEquals(5, screens.size)
+    screens.forEach { screen ->
+      org.junit.Assert.assertNotNull(screen)
+      org.junit.Assert.assertNotNull(screen.route)
+      org.junit.Assert.assertTrue(screen.route.isNotBlank())
+    }
+  }
 }

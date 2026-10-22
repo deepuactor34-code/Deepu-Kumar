@@ -25,6 +25,7 @@ sealed class YesminScreen(val route: String, val title: String, val icon: ImageV
     object About : YesminScreen("about", "About Yesmin", Icons.Default.AutoAwesome)
 
     companion object {
-        val bottomNavScreens = listOf(Home, Chat, Call, Coding, Tools)
+        val bottomNavScreens: List<YesminScreen>
+            get() = listOf(Home, Chat, Call, Coding, Tools)
     }
 }
